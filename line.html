@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG LINE</title>
+    <style>
+        .ln {
+            width: 500px;
+            height: 700px;
+            border: 1px solid red;
+            background: seashell;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .right {
+            transform: rotate(40deg);
+            transform-origin: 70% 20%;
+        }
+        
+        .left {
+            transform: rotate(-40deg);
+            transform-origin: 70% 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ln">
+        <svg viewBox="0 0 500 500">
+            <g class="grid">
+            </g>
+            <line x1="100" y1="20" x2="250" y2="20" stroke="green" stroke-width="4px"></line>
+            <line x1="100" y1="20" x2="202" y2="200" stroke="green" stroke-width="4px"></line>
+            <line x1="145" y1="200" x2="250" y2="20" stroke="green" stroke-width="4px"></line>
+
+            
+            <ellipse cx="350" cy="100" rx="50" ry="70" fill="none" stroke="black" stroke-width="2px"></ellipse>
+            <ellipse cx="350" cy="100" rx="70" ry="50" fill="none" stroke="black" stroke-width="2px"></ellipse>
+            <ellipse class="right" cx="350" cy="100" rx="50" ry="70" fill="none" stroke="black" stroke-width="2px"></ellipse>
+            <ellipse class="left" cx="350" cy="100" rx="50" ry="70" fill="none" stroke="black"stroke-width="2px"></ellipse>
+
+            <polyline points="40,100 100,200 10,200 40,100" fill="orange" stroke="black"></polyline>
+            <polygon points="100,250 200,400 25,400" fill="tomato" stroke="black"></polygon>
+            <path d="M350,250 L450,400 L250,400 L350,250" fill="powderblue" stroke="black"></path>
+
+            <path d="M10,500 C50,550 100,450 200,500"stroke="black" fill="none"></path>
+        </svg>
+
+
+    </div>
+</body>
+
+</html>
